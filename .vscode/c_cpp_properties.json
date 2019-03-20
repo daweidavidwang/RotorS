@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/david/catkin_ws/devel/include",
+        "/opt/ros/kinetic/include",
+        "/home/david/catkin_ws/src/geographic_info/geodesy/include",
+        "/home/david/catkin_ws/src/mavros/libmavconn/include",
+        "/home/david/catkin_ws/src/mav_comm/mav_msgs/include",
+        "/home/david/catkin_ws/src/mav_comm/mav_planning_msgs/include",
+        "/home/david/catkin_ws/src/mavros/mavros/include",
+        "/home/david/catkin_ws/src/mavros/mavros_msgs/include",
+        "/home/david/catkin_ws/src/rotors_simulator/rotors_control/include",
+        "/home/david/catkin_ws/src/rotors_simulator/rotors_gazebo_plugins/include",
+        "/home/david/catkin_ws/src/rotors_simulator/rotors_joy_interface/include",
+        "/home/david/catkin_ws/src/mavros/test_mavros/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}

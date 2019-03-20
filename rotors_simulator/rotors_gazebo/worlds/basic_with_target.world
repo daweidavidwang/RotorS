@@ -1,0 +1,292 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+      <include>
+      <name>Target0</name>
+      <uri>model://small_box</uri>
+      <pose>1.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+  <include>
+      <name>Target1</name>
+      <uri>model://small_box</uri>
+      <pose>2.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+  <include>
+      <name>Target2</name>
+      <uri>model://small_box</uri>
+      <pose>3.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+  <include>
+      <name>Target3</name>
+      <uri>model://small_box</uri>
+      <pose>4.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+  <include>
+      <name>Target4</name>
+      <uri>model://small_box</uri>
+      <pose>5.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target5</name>
+      <uri>model://small_box</uri>
+      <pose>6.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target6</name>
+      <uri>model://small_box</uri>
+      <pose>7.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target7</name>
+      <uri>model://small_box</uri>
+      <pose>8.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target8</name>
+      <uri>model://small_box</uri>
+      <pose>9.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target9</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target10</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target11</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target12</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target13</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target14</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target15</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target16</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target17</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target18</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target19</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target20</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target21</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target22</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target23</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target24</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target25</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target26</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target27</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target28</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target29</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target30</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target31</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target32</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target33</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target34</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target35</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target36</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target37</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target38</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target39</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target40</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target41</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target42</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target43</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target44</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target45</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target46</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target47</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target48</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ <include>
+      <name>Target49</name>
+      <uri>model://small_box</uri>
+      <pose>0.48626 3.390705 0.760253 0 0.000143 -1.57317</pose>
+    </include>
+ 
+    <!-- Only one ROS interface plugin is required per world, as any other plugin can connect a Gazebo
+         topic to a ROS topic (or vise versa). -->
+    <plugin name="ros_interface_plugin" filename="librotors_gazebo_ros_interface_plugin.so"/>
+
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>47.3667</latitude_deg>
+      <longitude_deg>8.5500</longitude_deg>
+      <elevation>500.0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <physics type='ode'>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>1000</iters>
+          <sor>1.3</sor>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.01</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>100</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+  </world>
+</sdf>
