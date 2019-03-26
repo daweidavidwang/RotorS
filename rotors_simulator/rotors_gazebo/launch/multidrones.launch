@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<launch>
+  <arg name="mav_name" default="iris"/>
+  <arg name="world_name" default="basic"/>
+  <arg name="enable_logging" default="false"/>
+  <arg name="enable_ground_truth" default="false"/>
+  <arg name="log_file" default="$(arg mav_name)"/>
+  <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find rotors_gazebo)/models"/>
+  <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find rotors_gazebo)/models"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find rotors_gazebo)/worlds/$(arg world_name).world"/>
+    <!-- <arg name="debug" value="true"/> -->
+    <arg name="paused" value="true"/>
+    <!-- <arg name="gui" value="false"/> -->
+  </include>
+  <group ns="$(arg mav_name)0">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="10.0"/>
+      <arg name="y" value="0.0"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)0"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="0"/>
+      <param name="destx" type="double" value="11.0"/>
+      <param name="desty" type="double" value="1.0"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly0"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)1">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="9.510565162951535"/>
+      <arg name="y" value="3.090169943749474"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)1"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="1"/>
+      <param name="destx" type="double" value="10.510565162951535"/>
+      <param name="desty" type="double" value="4.0901699437494745"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly1"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)2">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="8.090169943749475"/>
+      <arg name="y" value="5.877852522924732"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)2"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="2"/>
+      <param name="destx" type="double" value="9.090169943749475"/>
+      <param name="desty" type="double" value="6.877852522924732"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly2"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)3">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="5.877852522924732"/>
+      <arg name="y" value="8.090169943749475"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)3"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="3"/>
+      <param name="destx" type="double" value="6.877852522924732"/>
+      <param name="desty" type="double" value="9.090169943749475"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly3"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)4">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="3.0901699437494745"/>
+      <arg name="y" value="9.510565162951535"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)4"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="4"/>
+      <param name="destx" type="double" value="4.0901699437494745"/>
+      <param name="desty" type="double" value="10.510565162951535"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly4"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)5">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="6.123233995736766e-16"/>
+      <arg name="y" value="10.0"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)5"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="5"/>
+      <param name="destx" type="double" value="1.0000000000000007"/>
+      <param name="desty" type="double" value="11.0"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly5"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)6">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-3.0901699437494736"/>
+      <arg name="y" value="9.510565162951536"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)6"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="6"/>
+      <param name="destx" type="double" value="-2.0901699437494736"/>
+      <param name="desty" type="double" value="10.510565162951536"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly6"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)7">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-5.87785252292473"/>
+      <arg name="y" value="8.090169943749475"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)7"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="7"/>
+      <param name="destx" type="double" value="-4.87785252292473"/>
+      <param name="desty" type="double" value="9.090169943749475"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly7"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)8">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-8.090169943749473"/>
+      <arg name="y" value="5.877852522924733"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)8"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="8"/>
+      <param name="destx" type="double" value="-7.090169943749473"/>
+      <param name="desty" type="double" value="6.877852522924733"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly8"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)9">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-9.510565162951535"/>
+      <arg name="y" value="3.090169943749475"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)9"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="9"/>
+      <param name="destx" type="double" value="-8.510565162951535"/>
+      <param name="desty" type="double" value="4.0901699437494745"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly9"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)10">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-10.0"/>
+      <arg name="y" value="1.2246467991473533e-15"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)10"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="10"/>
+      <param name="destx" type="double" value="-9.0"/>
+      <param name="desty" type="double" value="1.0000000000000013"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly10"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)11">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-9.510565162951538"/>
+      <arg name="y" value="-3.090169943749469"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)11"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="11"/>
+      <param name="destx" type="double" value="-8.510565162951538"/>
+      <param name="desty" type="double" value="-2.090169943749469"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly11"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)12">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-8.090169943749476"/>
+      <arg name="y" value="-5.87785252292473"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)12"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="12"/>
+      <param name="destx" type="double" value="-7.090169943749476"/>
+      <param name="desty" type="double" value="-4.87785252292473"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly12"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)13">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-5.877852522924733"/>
+      <arg name="y" value="-8.090169943749473"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)13"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="13"/>
+      <param name="destx" type="double" value="-4.877852522924733"/>
+      <param name="desty" type="double" value="-7.090169943749473"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly13"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)14">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-3.0901699437494754"/>
+      <arg name="y" value="-9.510565162951535"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)14"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="14"/>
+      <param name="destx" type="double" value="-2.0901699437494754"/>
+      <param name="desty" type="double" value="-8.510565162951535"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly14"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)15">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="-1.8369701987210296e-15"/>
+      <arg name="y" value="-10.0"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)15"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="15"/>
+      <param name="destx" type="double" value="0.9999999999999981"/>
+      <param name="desty" type="double" value="-9.0"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly15"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)16">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="3.0901699437494723"/>
+      <arg name="y" value="-9.510565162951536"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)16"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="16"/>
+      <param name="destx" type="double" value="4.090169943749473"/>
+      <param name="desty" type="double" value="-8.510565162951536"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly16"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)17">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="5.877852522924729"/>
+      <arg name="y" value="-8.090169943749476"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)17"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="17"/>
+      <param name="destx" type="double" value="6.877852522924729"/>
+      <param name="desty" type="double" value="-7.090169943749476"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly17"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)18">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="8.090169943749473"/>
+      <arg name="y" value="-5.877852522924734"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)18"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="18"/>
+      <param name="destx" type="double" value="9.090169943749473"/>
+      <param name="desty" type="double" value="-4.877852522924734"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly18"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+  <group ns="$(arg mav_name)19">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="x" value="9.510565162951535"/>
+      <arg name="y" value="-3.0901699437494763"/>
+      <arg name="z" value="0.1"/>
+      <arg name="namespace" value="$(arg mav_name)19"/>
+      <arg name="mav_name" value="$(arg mav_name)"/>
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+      <arg name="enable_logging" value="$(arg enable_logging)"/>
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)"/>
+      <arg name="log_file" value="$(arg log_file)"/>
+    </include>
+    <node name="rotors_joy_interface" pkg="rotors_joy_interface" type="rotors_joy_interface">
+      <param name="rotorno" type="double" value="19"/>
+      <param name="destx" type="double" value="10.510565162951535"/>
+      <param name="desty" type="double" value="-2.0901699437494763"/>
+      <param name="destz" type="double" value="10.0"/>
+      <param name="modelname" value="/firefly19"/>
+    </node>
+    <node name="lee_position_controller_node" output="screen" pkg="rotors_control" type="lee_position_controller_node">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name).yaml"/>
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml"/>
+        <remap from="odometry" to="odometry_sensor1/odometry" />
+    </node>
+    <node name="hovering_example" output="screen" pkg="rotors_gazebo" type="hovering_example"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  </group>
+</launch>
