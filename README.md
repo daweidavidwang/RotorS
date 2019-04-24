@@ -14,7 +14,7 @@ catkin build
 
 roslaunch rotors_gazebo multidrones.launch 
 
-##Modify the Scenes type
+## Modify the Scenes type
 modify the beginner_tutorials/src/talker.cpp
 const int scenario_type =2; at line 32
 
