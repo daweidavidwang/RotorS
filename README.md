@@ -12,7 +12,7 @@ catkin build
 
 ## Run
 
-roslaunch rotors_gazebo multidrones.launch 
+roslaunch rotors_gazebo Multi_agent.launch 
 
 ## Modify the Scenes type
 modify the beginner_tutorials/src/talker.cpp
