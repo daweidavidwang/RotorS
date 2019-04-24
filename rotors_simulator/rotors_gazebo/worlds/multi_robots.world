@@ -2,110 +2,2007 @@
 <sdf version="1.4">
   <world name="default">
     <include>
-      <uri>model://ground_plane</uri>
-    </include>
-    <include>
       <uri>model://sun</uri>
     </include>
     <include>
-      <name>robot0</name>
+      <name>Robot_000</name>
       <uri>model://quadrotor</uri>
-      <pose>0.0 0.0 20.0 0 0.000143 -1.57317</pose>
+      <pose>50.0 0.0 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal0</name>
-      <uri>model://unit_sphere</uri>
-      <pose>0.0 0.0 20.0 0 0.000143 -1.57317</pose>
+      <name>Goal_000</name>
+      <uri>model://Goal__New</uri>
+      <pose>100.0 0.0 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot1</name>
+      <name>Robot_001</name>
       <uri>model://quadrotor</uri>
-      <pose>7.071067811865475 0.0 17.071067811865476 0 0.000143 -1.57317</pose>
+      <pose>49.97532801828658 1.5705379539064146 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal1</name>
-      <uri>model://unit_sphere</uri>
-      <pose>14.14213562373095 0.0 17.071067811865476 0 0.000143 -1.57317</pose>
+      <name>Goal_001</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.95065603657316 3.141075907812829 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot2</name>
+      <name>Robot_002</name>
       <uri>model://quadrotor</uri>
-      <pose>10.0 0.0 10.0 0 0.000143 -1.57317</pose>
+      <pose>49.901336421413575 3.1395259764656687 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal2</name>
-      <uri>model://unit_sphere</uri>
-      <pose>20.0 0.0 10.0 0 0.000143 -1.57317</pose>
+      <name>Goal_002</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.80267284282715 6.279051952931337 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot3</name>
+      <name>Robot_003</name>
       <uri>model://quadrotor</uri>
-      <pose>7.0710678118654755 0.0 2.9289321881345254 0 0.000143 -1.57317</pose>
+      <pose>49.778098230154 4.705415665925716 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal3</name>
-      <uri>model://unit_sphere</uri>
-      <pose>14.142135623730951 0.0 2.9289321881345254 0 0.000143 -1.57317</pose>
+      <name>Goal_003</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.556196460308 9.410831331851432 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot4</name>
+      <name>Robot_004</name>
       <uri>model://quadrotor</uri>
-      <pose>0.0 0.0 20.0 0 0.000143 -1.57317</pose>
+      <pose>49.60573506572389 6.266661678215213 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal4</name>
-      <uri>model://unit_sphere</uri>
-      <pose>0.0 0.0 20.0 0 0.000143 -1.57317</pose>
+      <name>Goal_004</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.21147013144778 12.533323356430426 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot5</name>
+      <name>Robot_005</name>
       <uri>model://quadrotor</uri>
-      <pose>4.329780281177466e-16 7.071067811865475 17.071067811865476 0 0.000143 -1.57317</pose>
+      <pose>49.38441702975689 7.821723252011544 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal5</name>
-      <uri>model://unit_sphere</uri>
-      <pose>8.659560562354932e-16 14.14213562373095 17.071067811865476 0 0.000143 -1.57317</pose>
+      <name>Goal_005</name>
+      <uri>model://Goal__New</uri>
+      <pose>98.76883405951378 15.643446504023087 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot6</name>
+      <name>Robot_006</name>
       <uri>model://quadrotor</uri>
-      <pose>6.123233995736766e-16 10.0 10.0 0 0.000143 -1.57317</pose>
+      <pose>49.114362536434435 9.36906572928623 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal6</name>
-      <uri>model://unit_sphere</uri>
-      <pose>1.2246467991473533e-15 20.0 10.0 0 0.000143 -1.57317</pose>
+      <name>Goal_006</name>
+      <uri>model://Goal__New</uri>
+      <pose>98.22872507286887 18.73813145857246 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot7</name>
+      <name>Robot_007</name>
       <uri>model://quadrotor</uri>
-      <pose>4.3297802811774667e-16 7.0710678118654755 2.9289321881345254 0 0.000143 -1.57317</pose>
+      <pose>48.79583809693737 10.907162069827127 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal7</name>
-      <uri>model://unit_sphere</uri>
-      <pose>8.659560562354933e-16 14.142135623730951 2.9289321881345254 0 0.000143 -1.57317</pose>
+      <name>Goal_007</name>
+      <uri>model://Goal__New</uri>
+      <pose>97.59167619387475 21.814324139654254 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot8</name>
+      <name>Robot_008</name>
       <uri>model://quadrotor</uri>
-      <pose>-0.0 0.0 20.0 0 0.000143 -1.57317</pose>
+      <pose>48.429158056431554 12.43449435824274 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal8</name>
-      <uri>model://unit_sphere</uri>
-      <pose>-0.0 0.0 20.0 0 0.000143 -1.57317</pose>
+      <name>Goal_008</name>
+      <uri>model://Goal__New</uri>
+      <pose>96.85831611286311 24.86898871648548 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>robot9</name>
+      <name>Robot_009</name>
       <uri>model://quadrotor</uri>
-      <pose>-7.071067811865475 8.659560562354932e-16 17.071067811865476 0 0.000143 -1.57317</pose>
+      <pose>48.01468428384715 13.949555301961464 10 0 0.000143 -1.57317</pose>
     </include>
     <include>
-      <name>goal9</name>
-      <uri>model://unit_sphere</uri>
-      <pose>-14.14213562373095 1.7319121124709865e-15 17.071067811865476 0 0.000143 -1.57317</pose>
+      <name>Goal_009</name>
+      <uri>model://Goal__New</uri>
+      <pose>96.0293685676943 27.899110603922928 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_010</name>
+      <uri>model://quadrotor</uri>
+      <pose>47.552825814757675 15.450849718747369 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_010</name>
+      <uri>model://Goal__New</uri>
+      <pose>95.10565162951535 30.901699437494738 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_011</name>
+      <uri>model://quadrotor</uri>
+      <pose>47.04403844771127 16.93689601226457 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_011</name>
+      <uri>model://Goal__New</uri>
+      <pose>94.08807689542255 33.87379202452914 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_012</name>
+      <uri>model://quadrotor</uri>
+      <pose>46.488824294412574 18.406227634233897 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_012</name>
+      <uri>model://Goal__New</uri>
+      <pose>92.97764858882515 36.812455268467794 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_013</name>
+      <uri>model://quadrotor</uri>
+      <pose>45.887731284199056 19.857394531739033 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_013</name>
+      <uri>model://Goal__New</uri>
+      <pose>91.77546256839811 39.714789063478065 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_014</name>
+      <uri>model://quadrotor</uri>
+      <pose>45.241352623300976 21.288964578253633 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_014</name>
+      <uri>model://Goal__New</uri>
+      <pose>90.48270524660195 42.57792915650727 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_015</name>
+      <uri>model://quadrotor</uri>
+      <pose>44.550326209418394 22.699524986977337 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_015</name>
+      <uri>model://Goal__New</uri>
+      <pose>89.10065241883679 45.399049973954675 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_016</name>
+      <uri>model://quadrotor</uri>
+      <pose>43.81533400219318 24.087683705085766 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_016</name>
+      <uri>model://Goal__New</uri>
+      <pose>87.63066800438637 48.17536741017153 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_017</name>
+      <uri>model://quadrotor</uri>
+      <pose>43.03710135019718 25.452070787518565 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_017</name>
+      <uri>model://Goal__New</uri>
+      <pose>86.07420270039437 50.90414157503713 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_018</name>
+      <uri>model://quadrotor</uri>
+      <pose>42.216396275100756 26.791339748949834 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_018</name>
+      <uri>model://Goal__New</uri>
+      <pose>84.43279255020151 53.58267949789967 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_019</name>
+      <uri>model://quadrotor</uri>
+      <pose>41.35402871372809 28.10416889260653 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_019</name>
+      <uri>model://Goal__New</uri>
+      <pose>82.70805742745618 56.20833778521306 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_020</name>
+      <uri>model://quadrotor</uri>
+      <pose>40.45084971874737 29.389262614623657 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_020</name>
+      <uri>model://Goal__New</uri>
+      <pose>80.90169943749474 58.778525229247315 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_021</name>
+      <uri>model://quadrotor</uri>
+      <pose>39.50775061878451 30.645352682648824 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_021</name>
+      <uri>model://Goal__New</uri>
+      <pose>79.01550123756903 61.29070536529765 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_022</name>
+      <uri>model://quadrotor</uri>
+      <pose>38.525662138789464 31.87119948743448 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_022</name>
+      <uri>model://Goal__New</uri>
+      <pose>77.05132427757893 63.74239897486896 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_023</name>
+      <uri>model://quadrotor</uri>
+      <pose>37.50555348152298 33.06559326618259 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_023</name>
+      <uri>model://Goal__New</uri>
+      <pose>75.01110696304596 66.13118653236518 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_024</name>
+      <uri>model://quadrotor</uri>
+      <pose>36.448431371070576 34.22735529643443 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_024</name>
+      <uri>model://Goal__New</uri>
+      <pose>72.89686274214115 68.45471059286886 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_025</name>
+      <uri>model://quadrotor</uri>
+      <pose>35.35533905932738 35.35533905932737 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_025</name>
+      <uri>model://Goal__New</uri>
+      <pose>70.71067811865476 70.71067811865474 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_026</name>
+      <uri>model://quadrotor</uri>
+      <pose>34.22735529643443 36.448431371070576 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_026</name>
+      <uri>model://Goal__New</uri>
+      <pose>68.45471059286886 72.89686274214115 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_027</name>
+      <uri>model://quadrotor</uri>
+      <pose>33.065593266182596 37.50555348152297 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_027</name>
+      <uri>model://Goal__New</uri>
+      <pose>66.13118653236519 75.01110696304595 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_028</name>
+      <uri>model://quadrotor</uri>
+      <pose>31.871199487434488 38.525662138789464 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_028</name>
+      <uri>model://Goal__New</uri>
+      <pose>63.742398974868976 77.05132427757893 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_029</name>
+      <uri>model://quadrotor</uri>
+      <pose>30.645352682648824 39.50775061878452 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_029</name>
+      <uri>model://Goal__New</uri>
+      <pose>61.29070536529765 79.01550123756904 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_030</name>
+      <uri>model://quadrotor</uri>
+      <pose>29.38926261462366 40.450849718747364 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_030</name>
+      <uri>model://Goal__New</uri>
+      <pose>58.77852522924732 80.90169943749473 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_031</name>
+      <uri>model://quadrotor</uri>
+      <pose>28.104168892606534 41.354028713728084 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_031</name>
+      <uri>model://Goal__New</uri>
+      <pose>56.20833778521307 82.70805742745617 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_032</name>
+      <uri>model://quadrotor</uri>
+      <pose>26.791339748949827 42.216396275100756 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_032</name>
+      <uri>model://Goal__New</uri>
+      <pose>53.582679497899655 84.43279255020151 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_033</name>
+      <uri>model://quadrotor</uri>
+      <pose>25.45207078751856 43.03710135019718 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_033</name>
+      <uri>model://Goal__New</uri>
+      <pose>50.90414157503712 86.07420270039437 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_034</name>
+      <uri>model://quadrotor</uri>
+      <pose>24.08768370508576 43.81533400219318 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_034</name>
+      <uri>model://Goal__New</uri>
+      <pose>48.17536741017152 87.63066800438637 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_035</name>
+      <uri>model://quadrotor</uri>
+      <pose>22.69952498697734 44.55032620941839 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_035</name>
+      <uri>model://Goal__New</uri>
+      <pose>45.39904997395468 89.10065241883677 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_036</name>
+      <uri>model://quadrotor</uri>
+      <pose>21.288964578253633 45.241352623300976 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_036</name>
+      <uri>model://Goal__New</uri>
+      <pose>42.57792915650727 90.48270524660195 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_037</name>
+      <uri>model://quadrotor</uri>
+      <pose>19.85739453173903 45.887731284199056 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_037</name>
+      <uri>model://Goal__New</uri>
+      <pose>39.71478906347806 91.77546256839811 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_038</name>
+      <uri>model://quadrotor</uri>
+      <pose>18.406227634233904 46.48882429441257 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_038</name>
+      <uri>model://Goal__New</uri>
+      <pose>36.81245526846781 92.97764858882513 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_039</name>
+      <uri>model://quadrotor</uri>
+      <pose>16.936896012264572 47.04403844771127 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_039</name>
+      <uri>model://Goal__New</uri>
+      <pose>33.873792024529145 94.08807689542255 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_040</name>
+      <uri>model://quadrotor</uri>
+      <pose>15.450849718747373 47.552825814757675 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_040</name>
+      <uri>model://Goal__New</uri>
+      <pose>30.901699437494745 95.10565162951535 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_041</name>
+      <uri>model://quadrotor</uri>
+      <pose>13.949555301961475 48.014684283847146 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_041</name>
+      <uri>model://Goal__New</uri>
+      <pose>27.89911060392295 96.02936856769429 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_042</name>
+      <uri>model://quadrotor</uri>
+      <pose>12.434494358242738 48.429158056431554 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_042</name>
+      <uri>model://Goal__New</uri>
+      <pose>24.868988716485475 96.85831611286311 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_043</name>
+      <uri>model://quadrotor</uri>
+      <pose>10.907162069827136 48.795838096937366 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_043</name>
+      <uri>model://Goal__New</uri>
+      <pose>21.81432413965427 97.59167619387473 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_044</name>
+      <uri>model://quadrotor</uri>
+      <pose>9.369065729286238 49.11436253643443 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_044</name>
+      <uri>model://Goal__New</uri>
+      <pose>18.738131458572475 98.22872507286885 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_045</name>
+      <uri>model://quadrotor</uri>
+      <pose>7.821723252011546 49.38441702975689 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_045</name>
+      <uri>model://Goal__New</uri>
+      <pose>15.643446504023093 98.76883405951378 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_046</name>
+      <uri>model://quadrotor</uri>
+      <pose>6.266661678215224 49.60573506572389 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_046</name>
+      <uri>model://Goal__New</uri>
+      <pose>12.533323356430447 99.21147013144778 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_047</name>
+      <uri>model://quadrotor</uri>
+      <pose>4.705415665925714 49.778098230154 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_047</name>
+      <uri>model://Goal__New</uri>
+      <pose>9.410831331851428 99.556196460308 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_048</name>
+      <uri>model://quadrotor</uri>
+      <pose>3.139525976465676 49.901336421413575 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_048</name>
+      <uri>model://Goal__New</uri>
+      <pose>6.279051952931352 99.80267284282715 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_049</name>
+      <uri>model://quadrotor</uri>
+      <pose>1.5705379539064197 49.97532801828658 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_049</name>
+      <uri>model://Goal__New</uri>
+      <pose>3.1410759078128394 99.95065603657316 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_050</name>
+      <uri>model://quadrotor</uri>
+      <pose>3.061616997868383e-15 50.0 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_050</name>
+      <uri>model://Goal__New</uri>
+      <pose>6.123233995736766e-15 100.0 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_051</name>
+      <uri>model://quadrotor</uri>
+      <pose>-1.570537953906414 49.97532801828658 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_051</name>
+      <uri>model://Goal__New</uri>
+      <pose>-3.141075907812828 99.95065603657316 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_052</name>
+      <uri>model://quadrotor</uri>
+      <pose>-3.13952597646567 49.901336421413575 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_052</name>
+      <uri>model://Goal__New</uri>
+      <pose>-6.27905195293134 99.80267284282715 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_053</name>
+      <uri>model://quadrotor</uri>
+      <pose>-4.705415665925719 49.778098230154 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_053</name>
+      <uri>model://Goal__New</uri>
+      <pose>-9.410831331851439 99.556196460308 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_054</name>
+      <uri>model://quadrotor</uri>
+      <pose>-6.266661678215208 49.60573506572389 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_054</name>
+      <uri>model://Goal__New</uri>
+      <pose>-12.533323356430415 99.21147013144778 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_055</name>
+      <uri>model://quadrotor</uri>
+      <pose>-7.821723252011541 49.38441702975689 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_055</name>
+      <uri>model://Goal__New</uri>
+      <pose>-15.643446504023082 98.76883405951378 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_056</name>
+      <uri>model://quadrotor</uri>
+      <pose>-9.36906572928623 49.114362536434435 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_056</name>
+      <uri>model://Goal__New</uri>
+      <pose>-18.73813145857246 98.22872507286887 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_057</name>
+      <uri>model://quadrotor</uri>
+      <pose>-10.907162069827118 48.79583809693737 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_057</name>
+      <uri>model://Goal__New</uri>
+      <pose>-21.814324139654236 97.59167619387475 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_058</name>
+      <uri>model://quadrotor</uri>
+      <pose>-12.434494358242743 48.429158056431554 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_058</name>
+      <uri>model://Goal__New</uri>
+      <pose>-24.868988716485486 96.85831611286311 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_059</name>
+      <uri>model://quadrotor</uri>
+      <pose>-13.949555301961459 48.01468428384715 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_059</name>
+      <uri>model://Goal__New</uri>
+      <pose>-27.899110603922917 96.0293685676943 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_060</name>
+      <uri>model://quadrotor</uri>
+      <pose>-15.450849718747357 47.55282581475768 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_060</name>
+      <uri>model://Goal__New</uri>
+      <pose>-30.901699437494713 95.10565162951536 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_061</name>
+      <uri>model://quadrotor</uri>
+      <pose>-16.93689601226457 47.04403844771127 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_061</name>
+      <uri>model://Goal__New</uri>
+      <pose>-33.87379202452914 94.08807689542255 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_062</name>
+      <uri>model://quadrotor</uri>
+      <pose>-18.406227634233886 46.488824294412574 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_062</name>
+      <uri>model://Goal__New</uri>
+      <pose>-36.81245526846777 92.97764858882515 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_063</name>
+      <uri>model://quadrotor</uri>
+      <pose>-19.857394531739033 45.887731284199056 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_063</name>
+      <uri>model://Goal__New</uri>
+      <pose>-39.714789063478065 91.77546256839811 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_064</name>
+      <uri>model://quadrotor</uri>
+      <pose>-21.288964578253637 45.241352623300976 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_064</name>
+      <uri>model://Goal__New</uri>
+      <pose>-42.577929156507274 90.48270524660195 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_065</name>
+      <uri>model://quadrotor</uri>
+      <pose>-22.699524986977334 44.550326209418394 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_065</name>
+      <uri>model://Goal__New</uri>
+      <pose>-45.39904997395467 89.10065241883679 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_066</name>
+      <uri>model://quadrotor</uri>
+      <pose>-24.087683705085773 43.815334002193175 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_066</name>
+      <uri>model://Goal__New</uri>
+      <pose>-48.175367410171546 87.63066800438635 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_067</name>
+      <uri>model://quadrotor</uri>
+      <pose>-25.452070787518565 43.03710135019718 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_067</name>
+      <uri>model://Goal__New</uri>
+      <pose>-50.90414157503713 86.07420270039437 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_068</name>
+      <uri>model://quadrotor</uri>
+      <pose>-26.791339748949845 42.21639627510075 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_068</name>
+      <uri>model://Goal__New</uri>
+      <pose>-53.58267949789969 84.4327925502015 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_069</name>
+      <uri>model://quadrotor</uri>
+      <pose>-28.104168892606534 41.354028713728084 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_069</name>
+      <uri>model://Goal__New</uri>
+      <pose>-56.20833778521307 82.70805742745617 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_070</name>
+      <uri>model://quadrotor</uri>
+      <pose>-29.38926261462365 40.45084971874737 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_070</name>
+      <uri>model://Goal__New</uri>
+      <pose>-58.7785252292473 80.90169943749474 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_071</name>
+      <uri>model://quadrotor</uri>
+      <pose>-30.64535268264883 39.50775061878451 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_071</name>
+      <uri>model://Goal__New</uri>
+      <pose>-61.29070536529766 79.01550123756903 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_072</name>
+      <uri>model://quadrotor</uri>
+      <pose>-31.871199487434488 38.525662138789464 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_072</name>
+      <uri>model://Goal__New</uri>
+      <pose>-63.742398974868976 77.05132427757893 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_073</name>
+      <uri>model://quadrotor</uri>
+      <pose>-33.06559326618259 37.50555348152299 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_073</name>
+      <uri>model://Goal__New</uri>
+      <pose>-66.13118653236518 75.01110696304598 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_074</name>
+      <uri>model://quadrotor</uri>
+      <pose>-34.22735529643444 36.44843137107057 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_074</name>
+      <uri>model://Goal__New</uri>
+      <pose>-68.45471059286888 72.89686274214114 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_075</name>
+      <uri>model://quadrotor</uri>
+      <pose>-35.35533905932737 35.35533905932738 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_075</name>
+      <uri>model://Goal__New</uri>
+      <pose>-70.71067811865474 70.71067811865476 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_076</name>
+      <uri>model://quadrotor</uri>
+      <pose>-36.44843137107057 34.22735529643444 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_076</name>
+      <uri>model://Goal__New</uri>
+      <pose>-72.89686274214114 68.45471059286888 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_077</name>
+      <uri>model://quadrotor</uri>
+      <pose>-37.50555348152298 33.06559326618259 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_077</name>
+      <uri>model://Goal__New</uri>
+      <pose>-75.01110696304596 66.13118653236518 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_078</name>
+      <uri>model://quadrotor</uri>
+      <pose>-38.52566213878946 31.87119948743449 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_078</name>
+      <uri>model://Goal__New</uri>
+      <pose>-77.05132427757891 63.74239897486898 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_079</name>
+      <uri>model://quadrotor</uri>
+      <pose>-39.50775061878452 30.64535268264882 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_079</name>
+      <uri>model://Goal__New</uri>
+      <pose>-79.01550123756904 61.29070536529764 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_080</name>
+      <uri>model://quadrotor</uri>
+      <pose>-40.450849718747364 29.38926261462366 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_080</name>
+      <uri>model://Goal__New</uri>
+      <pose>-80.90169943749473 58.77852522924732 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_081</name>
+      <uri>model://quadrotor</uri>
+      <pose>-41.354028713728084 28.10416889260654 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_081</name>
+      <uri>model://Goal__New</uri>
+      <pose>-82.70805742745617 56.20833778521308 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_082</name>
+      <uri>model://quadrotor</uri>
+      <pose>-42.21639627510074 26.79133974894985 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_082</name>
+      <uri>model://Goal__New</uri>
+      <pose>-84.43279255020148 53.5826794978997 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_083</name>
+      <uri>model://quadrotor</uri>
+      <pose>-43.03710135019719 25.452070787518554 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_083</name>
+      <uri>model://Goal__New</uri>
+      <pose>-86.07420270039438 50.90414157503711 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_084</name>
+      <uri>model://quadrotor</uri>
+      <pose>-43.81533400219318 24.08768370508576 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_084</name>
+      <uri>model://Goal__New</uri>
+      <pose>-87.63066800438637 48.17536741017152 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_085</name>
+      <uri>model://quadrotor</uri>
+      <pose>-44.55032620941839 22.699524986977345 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_085</name>
+      <uri>model://Goal__New</uri>
+      <pose>-89.10065241883677 45.39904997395469 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_086</name>
+      <uri>model://quadrotor</uri>
+      <pose>-45.24135262330097 21.288964578253644 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_086</name>
+      <uri>model://Goal__New</uri>
+      <pose>-90.48270524660194 42.57792915650729 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_087</name>
+      <uri>model://quadrotor</uri>
+      <pose>-45.88773128419905 19.857394531739054 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_087</name>
+      <uri>model://Goal__New</uri>
+      <pose>-91.7754625683981 39.71478906347811 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_088</name>
+      <uri>model://quadrotor</uri>
+      <pose>-46.48882429441257 18.406227634233908 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_088</name>
+      <uri>model://Goal__New</uri>
+      <pose>-92.97764858882513 36.812455268467815 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_089</name>
+      <uri>model://quadrotor</uri>
+      <pose>-47.04403844771127 16.936896012264565 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_089</name>
+      <uri>model://Goal__New</uri>
+      <pose>-94.08807689542255 33.87379202452913 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_090</name>
+      <uri>model://quadrotor</uri>
+      <pose>-47.552825814757675 15.450849718747376 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_090</name>
+      <uri>model://Goal__New</uri>
+      <pose>-95.10565162951535 30.901699437494752 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_091</name>
+      <uri>model://quadrotor</uri>
+      <pose>-48.014684283847146 13.949555301961478 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_091</name>
+      <uri>model://Goal__New</uri>
+      <pose>-96.02936856769429 27.899110603922956 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_092</name>
+      <uri>model://quadrotor</uri>
+      <pose>-48.42915805643155 12.434494358242763 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_092</name>
+      <uri>model://Goal__New</uri>
+      <pose>-96.8583161128631 24.868988716485525 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_093</name>
+      <uri>model://quadrotor</uri>
+      <pose>-48.795838096937366 10.907162069827137 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_093</name>
+      <uri>model://Goal__New</uri>
+      <pose>-97.59167619387473 21.814324139654275 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_094</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.114362536434435 9.369065729286229 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_094</name>
+      <uri>model://Goal__New</uri>
+      <pose>-98.22872507286887 18.738131458572457 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_095</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.38441702975688 7.821723252011549 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_095</name>
+      <uri>model://Goal__New</uri>
+      <pose>-98.76883405951376 15.643446504023098 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_096</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.60573506572389 6.266661678215227 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_096</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.21147013144778 12.533323356430454 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_097</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.778098230154 4.705415665925718 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_097</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.556196460308 9.410831331851435 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_098</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.901336421413575 3.139525976465679 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_098</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.80267284282715 6.279051952931358 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_099</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.97532801828658 1.570537953906412 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_099</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.95065603657316 3.141075907812824 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_100</name>
+      <uri>model://quadrotor</uri>
+      <pose>-50.0 6.123233995736766e-15 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_100</name>
+      <uri>model://Goal__New</uri>
+      <pose>-100.0 1.2246467991473532e-14 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_101</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.97532801828658 -1.5705379539063997 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_101</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.95065603657316 -3.1410759078127994 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_102</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.901336421413575 -3.1395259764656673 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_102</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.80267284282715 -6.279051952931335 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_103</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.778098230154 -4.705415665925705 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_103</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.556196460308 -9.41083133185141 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_104</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.60573506572389 -6.266661678215215 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_104</name>
+      <uri>model://Goal__New</uri>
+      <pose>-99.21147013144778 -12.53332335643043 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_105</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.38441702975689 -7.8217232520115365 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_105</name>
+      <uri>model://Goal__New</uri>
+      <pose>-98.76883405951378 -15.643446504023073 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_106</name>
+      <uri>model://quadrotor</uri>
+      <pose>-49.11436253643443 -9.369065729286238 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_106</name>
+      <uri>model://Goal__New</uri>
+      <pose>-98.22872507286885 -18.738131458572475 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_107</name>
+      <uri>model://quadrotor</uri>
+      <pose>-48.79583809693737 -10.907162069827125 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_107</name>
+      <uri>model://Goal__New</uri>
+      <pose>-97.59167619387475 -21.81432413965425 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_108</name>
+      <uri>model://quadrotor</uri>
+      <pose>-48.42915805643156 -12.434494358242729 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_108</name>
+      <uri>model://Goal__New</uri>
+      <pose>-96.85831611286312 -24.868988716485458 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_109</name>
+      <uri>model://quadrotor</uri>
+      <pose>-48.01468428384716 -13.949555301961444 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_109</name>
+      <uri>model://Goal__New</uri>
+      <pose>-96.02936856769432 -27.89911060392289 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_110</name>
+      <uri>model://quadrotor</uri>
+      <pose>-47.55282581475768 -15.450849718747364 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_110</name>
+      <uri>model://Goal__New</uri>
+      <pose>-95.10565162951536 -30.901699437494727 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_111</name>
+      <uri>model://quadrotor</uri>
+      <pose>-47.04403844771127 -16.936896012264572 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_111</name>
+      <uri>model://Goal__New</uri>
+      <pose>-94.08807689542255 -33.873792024529145 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_112</name>
+      <uri>model://quadrotor</uri>
+      <pose>-46.488824294412574 -18.406227634233897 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_112</name>
+      <uri>model://Goal__New</uri>
+      <pose>-92.97764858882515 -36.812455268467794 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_113</name>
+      <uri>model://quadrotor</uri>
+      <pose>-45.88773128419906 -19.85739453173902 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_113</name>
+      <uri>model://Goal__New</uri>
+      <pose>-91.77546256839813 -39.71478906347804 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_114</name>
+      <uri>model://quadrotor</uri>
+      <pose>-45.24135262330098 -21.288964578253612 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_114</name>
+      <uri>model://Goal__New</uri>
+      <pose>-90.48270524660197 -42.577929156507224 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_115</name>
+      <uri>model://quadrotor</uri>
+      <pose>-44.55032620941839 -22.699524986977355 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_115</name>
+      <uri>model://Goal__New</uri>
+      <pose>-89.10065241883677 -45.39904997395471 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_116</name>
+      <uri>model://quadrotor</uri>
+      <pose>-43.815334002193175 -24.08768370508577 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_116</name>
+      <uri>model://Goal__New</uri>
+      <pose>-87.63066800438635 -48.17536741017154 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_117</name>
+      <uri>model://quadrotor</uri>
+      <pose>-43.03710135019718 -25.45207078751856 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_117</name>
+      <uri>model://Goal__New</uri>
+      <pose>-86.07420270039437 -50.90414157503712 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_118</name>
+      <uri>model://quadrotor</uri>
+      <pose>-42.216396275100756 -26.79133974894982 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_118</name>
+      <uri>model://Goal__New</uri>
+      <pose>-84.43279255020151 -53.58267949789964 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_119</name>
+      <uri>model://quadrotor</uri>
+      <pose>-41.354028713728106 -28.104168892606513 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_119</name>
+      <uri>model://Goal__New</uri>
+      <pose>-82.70805742745621 -56.208337785213025 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_120</name>
+      <uri>model://quadrotor</uri>
+      <pose>-40.45084971874739 -29.389262614623636 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_120</name>
+      <uri>model://Goal__New</uri>
+      <pose>-80.90169943749478 -58.77852522924727 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_121</name>
+      <uri>model://quadrotor</uri>
+      <pose>-39.50775061878451 -30.64535268264883 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_121</name>
+      <uri>model://Goal__New</uri>
+      <pose>-79.01550123756903 -61.29070536529766 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_122</name>
+      <uri>model://quadrotor</uri>
+      <pose>-38.525662138789464 -31.87119948743448 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_122</name>
+      <uri>model://Goal__New</uri>
+      <pose>-77.05132427757893 -63.74239897486896 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_123</name>
+      <uri>model://quadrotor</uri>
+      <pose>-37.50555348152299 -33.06559326618259 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_123</name>
+      <uri>model://Goal__New</uri>
+      <pose>-75.01110696304598 -66.13118653236518 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_124</name>
+      <uri>model://quadrotor</uri>
+      <pose>-36.44843137107059 -34.22735529643442 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_124</name>
+      <uri>model://Goal__New</uri>
+      <pose>-72.89686274214118 -68.45471059286884 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_125</name>
+      <uri>model://quadrotor</uri>
+      <pose>-35.35533905932739 -35.355339059327356 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_125</name>
+      <uri>model://Goal__New</uri>
+      <pose>-70.71067811865478 -70.71067811865471 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_126</name>
+      <uri>model://quadrotor</uri>
+      <pose>-34.22735529643443 -36.448431371070576 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_126</name>
+      <uri>model://Goal__New</uri>
+      <pose>-68.45471059286886 -72.89686274214115 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_127</name>
+      <uri>model://quadrotor</uri>
+      <pose>-33.065593266182596 -37.50555348152297 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_127</name>
+      <uri>model://Goal__New</uri>
+      <pose>-66.13118653236519 -75.01110696304595 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_128</name>
+      <uri>model://quadrotor</uri>
+      <pose>-31.871199487434478 -38.52566213878947 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_128</name>
+      <uri>model://Goal__New</uri>
+      <pose>-63.742398974868955 -77.05132427757894 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_129</name>
+      <uri>model://quadrotor</uri>
+      <pose>-30.645352682648824 -39.50775061878452 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_129</name>
+      <uri>model://Goal__New</uri>
+      <pose>-61.29070536529765 -79.01550123756904 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_130</name>
+      <uri>model://quadrotor</uri>
+      <pose>-29.38926261462366 -40.450849718747364 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_130</name>
+      <uri>model://Goal__New</uri>
+      <pose>-58.77852522924732 -80.90169943749473 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_131</name>
+      <uri>model://quadrotor</uri>
+      <pose>-28.104168892606545 -41.35402871372808 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_131</name>
+      <uri>model://Goal__New</uri>
+      <pose>-56.20833778521309 -82.70805742745615 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_132</name>
+      <uri>model://quadrotor</uri>
+      <pose>-26.791339748949817 -42.21639627510076 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_132</name>
+      <uri>model://Goal__New</uri>
+      <pose>-53.58267949789963 -84.43279255020153 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_133</name>
+      <uri>model://quadrotor</uri>
+      <pose>-25.452070787518554 -43.03710135019719 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_133</name>
+      <uri>model://Goal__New</uri>
+      <pose>-50.90414157503711 -86.07420270039438 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_134</name>
+      <uri>model://quadrotor</uri>
+      <pose>-24.087683705085762 -43.81533400219318 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_134</name>
+      <uri>model://Goal__New</uri>
+      <pose>-48.175367410171525 -87.63066800438637 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_135</name>
+      <uri>model://quadrotor</uri>
+      <pose>-22.699524986977345 -44.55032620941839 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_135</name>
+      <uri>model://Goal__New</uri>
+      <pose>-45.39904997395469 -89.10065241883677 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_136</name>
+      <uri>model://quadrotor</uri>
+      <pose>-21.28896457825361 -45.24135262330099 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_136</name>
+      <uri>model://Goal__New</uri>
+      <pose>-42.57792915650722 -90.48270524660198 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_137</name>
+      <uri>model://quadrotor</uri>
+      <pose>-19.857394531739015 -45.88773128419906 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_137</name>
+      <uri>model://Goal__New</uri>
+      <pose>-39.71478906347803 -91.77546256839813 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_138</name>
+      <uri>model://quadrotor</uri>
+      <pose>-18.40622763423389 -46.488824294412574 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_138</name>
+      <uri>model://Goal__New</uri>
+      <pose>-36.81245526846778 -92.97764858882515 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_139</name>
+      <uri>model://quadrotor</uri>
+      <pose>-16.93689601226457 -47.04403844771127 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_139</name>
+      <uri>model://Goal__New</uri>
+      <pose>-33.87379202452914 -94.08807689542255 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_140</name>
+      <uri>model://quadrotor</uri>
+      <pose>-15.450849718747378 -47.552825814757675 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_140</name>
+      <uri>model://Goal__New</uri>
+      <pose>-30.901699437494756 -95.10565162951535 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_141</name>
+      <uri>model://quadrotor</uri>
+      <pose>-13.94955530196148 -48.014684283847146 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_141</name>
+      <uri>model://Goal__New</uri>
+      <pose>-27.89911060392296 -96.02936856769429 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_142</name>
+      <uri>model://quadrotor</uri>
+      <pose>-12.434494358242722 -48.42915805643156 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_142</name>
+      <uri>model://Goal__New</uri>
+      <pose>-24.868988716485443 -96.85831611286312 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_143</name>
+      <uri>model://quadrotor</uri>
+      <pose>-10.907162069827118 -48.79583809693737 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_143</name>
+      <uri>model://Goal__New</uri>
+      <pose>-21.814324139654236 -97.59167619387475 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_144</name>
+      <uri>model://quadrotor</uri>
+      <pose>-9.369065729286232 -49.114362536434435 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_144</name>
+      <uri>model://Goal__New</uri>
+      <pose>-18.738131458572465 -98.22872507286887 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_145</name>
+      <uri>model://quadrotor</uri>
+      <pose>-7.821723252011552 -49.38441702975688 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_145</name>
+      <uri>model://Goal__New</uri>
+      <pose>-15.643446504023103 -98.76883405951376 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_146</name>
+      <uri>model://quadrotor</uri>
+      <pose>-6.26666167821523 -49.60573506572389 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_146</name>
+      <uri>model://Goal__New</uri>
+      <pose>-12.53332335643046 -99.21147013144778 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_147</name>
+      <uri>model://quadrotor</uri>
+      <pose>-4.705415665925698 -49.778098230154 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_147</name>
+      <uri>model://Goal__New</uri>
+      <pose>-9.410831331851396 -99.556196460308 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_148</name>
+      <uri>model://quadrotor</uri>
+      <pose>-3.1395259764656602 -49.901336421413575 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_148</name>
+      <uri>model://Goal__New</uri>
+      <pose>-6.2790519529313205 -99.80267284282715 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_149</name>
+      <uri>model://quadrotor</uri>
+      <pose>-1.570537953906415 -49.97532801828658 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_149</name>
+      <uri>model://Goal__New</uri>
+      <pose>-3.14107590781283 -99.95065603657316 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_150</name>
+      <uri>model://quadrotor</uri>
+      <pose>-9.184850993605149e-15 -50.0 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_150</name>
+      <uri>model://Goal__New</uri>
+      <pose>-1.8369701987210297e-14 -100.0 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_151</name>
+      <uri>model://quadrotor</uri>
+      <pose>1.5705379539063966 -49.97532801828658 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_151</name>
+      <uri>model://Goal__New</uri>
+      <pose>3.141075907812793 -99.95065603657316 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_152</name>
+      <uri>model://quadrotor</uri>
+      <pose>3.1395259764656416 -49.901336421413575 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_152</name>
+      <uri>model://Goal__New</uri>
+      <pose>6.279051952931283 -99.80267284282715 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_153</name>
+      <uri>model://quadrotor</uri>
+      <pose>4.705415665925725 -49.778098230154 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_153</name>
+      <uri>model://Goal__New</uri>
+      <pose>9.41083133185145 -99.556196460308 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_154</name>
+      <uri>model://quadrotor</uri>
+      <pose>6.266661678215211 -49.60573506572389 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_154</name>
+      <uri>model://Goal__New</uri>
+      <pose>12.533323356430422 -99.21147013144778 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_155</name>
+      <uri>model://quadrotor</uri>
+      <pose>7.821723252011534 -49.38441702975689 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_155</name>
+      <uri>model://Goal__New</uri>
+      <pose>15.643446504023068 -98.76883405951378 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_156</name>
+      <uri>model://quadrotor</uri>
+      <pose>9.369065729286213 -49.114362536434435 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_156</name>
+      <uri>model://Goal__New</uri>
+      <pose>18.738131458572425 -98.22872507286887 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_157</name>
+      <uri>model://quadrotor</uri>
+      <pose>10.9071620698271 -48.79583809693738 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_157</name>
+      <uri>model://Goal__New</uri>
+      <pose>21.8143241396542 -97.59167619387476 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_158</name>
+      <uri>model://quadrotor</uri>
+      <pose>12.434494358242747 -48.429158056431554 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_158</name>
+      <uri>model://Goal__New</uri>
+      <pose>24.868988716485493 -96.85831611286311 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_159</name>
+      <uri>model://quadrotor</uri>
+      <pose>13.94955530196146 -48.01468428384715 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_159</name>
+      <uri>model://Goal__New</uri>
+      <pose>27.89911060392292 -96.0293685676943 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_160</name>
+      <uri>model://quadrotor</uri>
+      <pose>15.450849718747362 -47.55282581475768 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_160</name>
+      <uri>model://Goal__New</uri>
+      <pose>30.901699437494724 -95.10565162951536 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_161</name>
+      <uri>model://quadrotor</uri>
+      <pose>16.93689601226455 -47.04403844771128 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_161</name>
+      <uri>model://Goal__New</uri>
+      <pose>33.8737920245291 -94.08807689542256 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_162</name>
+      <uri>model://quadrotor</uri>
+      <pose>18.406227634233872 -46.48882429441258 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_162</name>
+      <uri>model://Goal__New</uri>
+      <pose>36.812455268467744 -92.97764858882516 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_163</name>
+      <uri>model://quadrotor</uri>
+      <pose>19.857394531738997 -45.88773128419908 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_163</name>
+      <uri>model://Goal__New</uri>
+      <pose>39.714789063477994 -91.77546256839815 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_164</name>
+      <uri>model://quadrotor</uri>
+      <pose>21.28896457825359 -45.241352623301 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_164</name>
+      <uri>model://Goal__New</uri>
+      <pose>42.57792915650718 -90.482705246602 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_165</name>
+      <uri>model://quadrotor</uri>
+      <pose>22.69952498697729 -44.550326209418415 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_165</name>
+      <uri>model://Goal__New</uri>
+      <pose>45.39904997395458 -89.10065241883683 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_166</name>
+      <uri>model://quadrotor</uri>
+      <pose>24.087683705085787 -43.81533400219317 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_166</name>
+      <uri>model://Goal__New</uri>
+      <pose>48.175367410171575 -87.63066800438634 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_167</name>
+      <uri>model://quadrotor</uri>
+      <pose>25.452070787518576 -43.03710135019717 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_167</name>
+      <uri>model://Goal__New</uri>
+      <pose>50.90414157503715 -86.07420270039434 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_168</name>
+      <uri>model://quadrotor</uri>
+      <pose>26.791339748949838 -42.21639627510075 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_168</name>
+      <uri>model://Goal__New</uri>
+      <pose>53.582679497899676 -84.4327925502015 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_169</name>
+      <uri>model://quadrotor</uri>
+      <pose>28.10416889260653 -41.35402871372809 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_169</name>
+      <uri>model://Goal__New</uri>
+      <pose>56.20833778521306 -82.70805742745618 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_170</name>
+      <uri>model://quadrotor</uri>
+      <pose>29.389262614623647 -40.45084971874738 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_170</name>
+      <uri>model://Goal__New</uri>
+      <pose>58.77852522924729 -80.90169943749476 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_171</name>
+      <uri>model://quadrotor</uri>
+      <pose>30.645352682648806 -39.507750618784534 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_171</name>
+      <uri>model://Goal__New</uri>
+      <pose>61.29070536529761 -79.01550123756907 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_172</name>
+      <uri>model://quadrotor</uri>
+      <pose>31.871199487434467 -38.52566213878948 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_172</name>
+      <uri>model://Goal__New</uri>
+      <pose>63.742398974868934 -77.05132427757896 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_173</name>
+      <uri>model://quadrotor</uri>
+      <pose>33.06559326618256 -37.505553481523 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_173</name>
+      <uri>model://Goal__New</uri>
+      <pose>66.13118653236512 -75.011106963046 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_174</name>
+      <uri>model://quadrotor</uri>
+      <pose>34.227355296434396 -36.448431371070605 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_174</name>
+      <uri>model://Goal__New</uri>
+      <pose>68.45471059286879 -72.89686274214121 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_175</name>
+      <uri>model://quadrotor</uri>
+      <pose>35.35533905932734 -35.35533905932742 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_175</name>
+      <uri>model://Goal__New</uri>
+      <pose>70.71067811865468 -70.71067811865484 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_176</name>
+      <uri>model://quadrotor</uri>
+      <pose>36.44843137107056 -34.227355296434446 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_176</name>
+      <uri>model://Goal__New</uri>
+      <pose>72.89686274214112 -68.45471059286889 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_177</name>
+      <uri>model://quadrotor</uri>
+      <pose>37.50555348152299 -33.06559326618258 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_177</name>
+      <uri>model://Goal__New</uri>
+      <pose>75.01110696304598 -66.13118653236516 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_178</name>
+      <uri>model://quadrotor</uri>
+      <pose>38.52566213878947 -31.87119948743448 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_178</name>
+      <uri>model://Goal__New</uri>
+      <pose>77.05132427757894 -63.74239897486896 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_179</name>
+      <uri>model://quadrotor</uri>
+      <pose>39.50775061878451 -30.645352682648824 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_179</name>
+      <uri>model://Goal__New</uri>
+      <pose>79.01550123756903 -61.29070536529765 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_180</name>
+      <uri>model://quadrotor</uri>
+      <pose>40.450849718747364 -29.389262614623668 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_180</name>
+      <uri>model://Goal__New</uri>
+      <pose>80.90169943749473 -58.778525229247336 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_181</name>
+      <uri>model://quadrotor</uri>
+      <pose>41.35402871372808 -28.104168892606545 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_181</name>
+      <uri>model://Goal__New</uri>
+      <pose>82.70805742745615 -56.20833778521309 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_182</name>
+      <uri>model://quadrotor</uri>
+      <pose>42.216396275100735 -26.791339748949856 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_182</name>
+      <uri>model://Goal__New</uri>
+      <pose>84.43279255020147 -53.58267949789971 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_183</name>
+      <uri>model://quadrotor</uri>
+      <pose>43.03710135019716 -25.4520707875186 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_183</name>
+      <uri>model://Goal__New</uri>
+      <pose>86.07420270039432 -50.9041415750372 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_184</name>
+      <uri>model://quadrotor</uri>
+      <pose>43.815334002193154 -24.087683705085805 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_184</name>
+      <uri>model://Goal__New</uri>
+      <pose>87.63066800438631 -48.17536741017161 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_185</name>
+      <uri>model://quadrotor</uri>
+      <pose>44.55032620941839 -22.699524986977348 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_185</name>
+      <uri>model://Goal__New</uri>
+      <pose>89.10065241883677 -45.399049973954696 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_186</name>
+      <uri>model://quadrotor</uri>
+      <pose>45.24135262330097 -21.28896457825365 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_186</name>
+      <uri>model://Goal__New</uri>
+      <pose>90.48270524660194 -42.5779291565073 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_187</name>
+      <uri>model://quadrotor</uri>
+      <pose>45.88773128419906 -19.85739453173902 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_187</name>
+      <uri>model://Goal__New</uri>
+      <pose>91.77546256839813 -39.71478906347804 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_188</name>
+      <uri>model://quadrotor</uri>
+      <pose>46.488824294412574 -18.406227634233893 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_188</name>
+      <uri>model://Goal__New</uri>
+      <pose>92.97764858882515 -36.81245526846779 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_189</name>
+      <uri>model://quadrotor</uri>
+      <pose>47.04403844771127 -16.936896012264572 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_189</name>
+      <uri>model://Goal__New</uri>
+      <pose>94.08807689542255 -33.873792024529145 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_190</name>
+      <uri>model://quadrotor</uri>
+      <pose>47.552825814757675 -15.450849718747381 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_190</name>
+      <uri>model://Goal__New</uri>
+      <pose>95.10565162951535 -30.901699437494763 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_191</name>
+      <uri>model://quadrotor</uri>
+      <pose>48.014684283847146 -13.949555301961484 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_191</name>
+      <uri>model://Goal__New</uri>
+      <pose>96.02936856769429 -27.899110603922967 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_192</name>
+      <uri>model://quadrotor</uri>
+      <pose>48.42915805643155 -12.434494358242768 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_192</name>
+      <uri>model://Goal__New</uri>
+      <pose>96.8583161128631 -24.868988716485536 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_193</name>
+      <uri>model://quadrotor</uri>
+      <pose>48.79583809693736 -10.907162069827166 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_193</name>
+      <uri>model://Goal__New</uri>
+      <pose>97.59167619387472 -21.81432413965433 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_194</name>
+      <uri>model://quadrotor</uri>
+      <pose>49.114362536434435 -9.369065729286234 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_194</name>
+      <uri>model://Goal__New</uri>
+      <pose>98.22872507286887 -18.738131458572468 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_195</name>
+      <uri>model://quadrotor</uri>
+      <pose>49.38441702975688 -7.821723252011554 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_195</name>
+      <uri>model://Goal__New</uri>
+      <pose>98.76883405951376 -15.643446504023109 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_196</name>
+      <uri>model://quadrotor</uri>
+      <pose>49.60573506572389 -6.2666616782152325 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_196</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.21147013144778 -12.533323356430465 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_197</name>
+      <uri>model://quadrotor</uri>
+      <pose>49.778098230154 -4.705415665925745 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_197</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.556196460308 -9.41083133185149 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_198</name>
+      <uri>model://quadrotor</uri>
+      <pose>49.901336421413575 -3.1395259764656633 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_198</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.80267284282715 -6.279051952931327 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Robot_199</name>
+      <uri>model://quadrotor</uri>
+      <pose>49.97532801828658 -1.5705379539064181 10 0 0.000143 -1.57317</pose>
+    </include>
+    <include>
+      <name>Goal_199</name>
+      <uri>model://Goal__New</uri>
+      <pose>99.95065603657316 -3.1410759078128363 10 0 0.000143 -1.57317</pose>
     </include>
     <plugin filename="librotors_gazebo_ros_interface_plugin.so" name="ros_interface_plugin"/>
     <spherical_coordinates>
