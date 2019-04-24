@@ -28,8 +28,8 @@ const float M_PI = 3.14159265358979323846f;
 #endif
 std::clock_t start;
 const int NUM_ROBOT = 200;
-const float env_size = 50;
-const int scenario_type =3;
+const float env_size = 100;
+const int scenario_type =2;
 int x = 0; //using in UNIFORM function 
 double robot_pos[NUM_ROBOT][3];
 double path_length[NUM_ROBOT];
